@@ -47,7 +47,7 @@ i.fa-plus{
 .notice li, .news li{
     line-height: 220%;
     text-indent: 10px;
-    width: 440px;
+    width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
