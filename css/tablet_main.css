@@ -110,7 +110,7 @@
         width: 100%;
         overflow: hidden;
     }
-    .m_slides{
+    .mobile_slides{
         display: none;
     }
     .con .ad img, .con .new_item img{
