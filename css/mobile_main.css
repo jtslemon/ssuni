@@ -117,6 +117,7 @@
         /* height:100vh;vertical height */
         /* height:calc(100vh - 10vh); */
     }
+    
 
     .pc_tablet_slide{display:none;}
     article img{width:100%;}

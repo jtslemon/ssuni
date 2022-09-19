@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1024px){
+        
+    i.fa-search, i.fa-times ,i.fa-chevron-down{
+        display: none;
+    }
+    header{
+        position: relative;
+        z-index: 1000;
+        height:112px;
+    }
+    .header_inner{
+        position: relative;
+        width: 100%;
+        height: 72px;
+        margin: 0px auto;
+    }
+    .header_inner > h1{
+        /* position: relative; top: 30px; */
+        transform: translateY(20px);
+        width:196px;
+    }
+    .header_inner .lnb{
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    .header_inner .lnb > ul{
+        display: flex;
+    }
+    .header_inner .lnb > ul a{
+        text-transform: uppercase;
+        font-size: 13px;
+        border-right: 1px solid #ccc;
+        padding: 0px 6px;
+        line-height: 22px;
+    }
+    .header_inner .lnb > ul li:nth-child(6) a{
+        border: none;
+    }
+    .toggle_btn{
+        position:absolute;
+        top:70%; right: 10px;
+        font-size:2rem;
+        padding:5px;
+        cursor:pointer;
+        z-index: 11;
+    }
+    #toggle:checked + header .gnb{
+        height: 260px;
+    }
+    #sh{
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .lnb .fa-scarch{
+        font-size: 18px;
+        transform: translate(-22px, 2px);
+    }
+    .gnb{
+        transform: translateY(-11px);
+        width: 100%;
+        height: 40px;
+        background: rgba(255,255,255,0.9);
+        position: absolute;
+        overflow: hidden;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .gnb > ul{
+        display: flex;
+        width: 95%;
+        margin-right: 3%;
+        justify-content: right;
+    }
+    .gnb > ul > li{
+        margin: 0px 2.4%;
+        text-align: center;
+        position: relative;
+    }
+    .gnb > ul > li a{
+        font-size: 16px;
+        padding: 0px 6px;
+        display: block;
+        line-height: 40px;
+    }
+    .gnb > ul > li a:hover{
+        color: #f90;
+    }
+    .gnb > ul > li a::after{
+        display: block;
+        content: "";
+        height: 2px;
+        background: #f90;
+        transform:translateY(-3px) scale(0);
+        transition: 0.3s;
+    }
+    .gnb > ul > li a:hover::after{
+        transform: translateY(3px) scale(1);
+    }
+    /* 서브메뉴 서식 */
+    .sub{}
+    .sub a{
+        line-height: 36px;
+        display: block;
+        font-size: 13px;
+    }
+    main{
+        width: 100%;
+        overflow: hidden;
+    }
+    .m_slides{
+        display: none;
+    }
+    .con .ad img, .con .new_item img{
+        width: 100%;
+    }
+    .con{
+        width: 100%;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        'item ad'
+        'brand brand'
+        'store store'
+        'notice news';
+    }
+    .con > h2{display:none;}
+    .con .new_item{grid-area:item;}
+    .con .brand{grid-area:brand;}
+    .con .ad{grid-area:ad;}
+    .con .notice{grid-area:notice;
+    overflow: hidden;}
+    .con .store{grid-area:store;}
+    .con .news{grid-area:news;
+    overflow: hidden;}
+
+    .con .ad img, .con .new_item img{
+        width:100%;
+    }
+    .brand img{
+        width: 50%;
+    }
+    .brand_banner{
+        display:block;
+        width:50%;
+        height: 100%;
+        background-size:100%;
+        background-repeat: no-repeat;
+        text-indent:-9999px;
+        float: left;
+    }
+    .store a{
+        display:block;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position:center;
+        text-indent:-9999px;
+        height:152px; width: 280px;
+    }
+    .notice li, .news li{
+        width: 100%;
+        padding:0px 2%;
+        box-sizing: border-box;
+    }
+    /* 푸터영역 서식 */
+    footer{
+        width: 100%;
+        padding: 5px 1.95%;
+        box-sizing: border-box;
+    }
+    footer{
+        font-weight: 500;
+    }
+    .f_lnb, address{
+        width: 100%;
+        margin: 0px auto;
+        text-align: left;
+    }
+    address > p{
+        text-align: left;
+        transform: translateY(-24px);
+    }
+    .f_lnb ul{
+        padding-top: 14px;
+        display: flex;
+        justify-content: left;
+    }
+    .f_lnb, .sns{
+        text-align: center;
+        line-height: 100%;
+    }
+    .sns{
+        width: 100%;
+        margin: 0px auto;
+        padding: 8px 0px;
+    }
+    .sns ul{
+        display: flex;
+        justify-content: right;
+    }
+    .f_lnb li, .sns li{
+        display: inline-block;
+    }
+    
+}
